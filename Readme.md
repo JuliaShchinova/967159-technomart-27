@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Юлия Щинова](https://up.htmlacademy.ru/htmlcss/27/user/967159).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
 ---
 
