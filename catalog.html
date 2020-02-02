@@ -12,8 +12,10 @@
       <a href="index.html">
         <img src="img/logo-technomart.svg" alt="Техномарт" width="109" height="19" style="background-color: red;"><!--убрать фон-->
       </a>
-      <form>
-        <label>Поиск:<input type="text" id="search" name="search"></label>
+      <form action="https://echo.htmlacademy.ru/" method="GET">
+        <input type="text" id="search" name="search" palceholder="Поиск:">
+        <label class="visually-hidden" for="search">Поиск</label>
+        <button type="submit"><span class="visually-hidden">Кнопка поиска</span></button>
       </form>
       <ul>
         <li><a href="#">Закладки: 0</a></li>
@@ -66,11 +68,14 @@
       <section>
         <h2>Фильтр:</h2>
         <!--Разметка формы-->
-        <form action="https://echo.htmlacademy.ru/" method="GET">
+        <form action="https://echo.htmlacademy.ru/" method="POST">
           <fieldset>
             <legend>Цена:</legend>
-            <label class="visually-hidden">От<input type="text" name="from" value="0"></label>
-            <label class="visually-hidden">До<input type="text" name="to" value="30000"></label>
+            <label class="visually-hidden" for="from">От</label>
+            <input type="text" name="from" id="from" value="0">
+            <span>—</span>
+            <label class="visually-hidden" for="to">До</label>
+            <input type="text" name="to" id="to" value="30000">
           </fieldset>
 
           <fieldset>
@@ -315,13 +320,13 @@
         <p>© 2010–2019 Компания «Техномарт»<br>
           Все права защищены</p>
         <div>
-          <a href="#">Вконтакте</a>
-          <a href="#">Фейсбук</a>
-          <a href="#">Инстаграм</a>
+          <a href="#"><span class="visually-hidden">Вконтакте</span></a>
+          <a href="#"><span class="visually-hidden">Фейсбук</span></a>
+          <a href="#"><span class="visually-hidden">Инстаграм</span></a>
         </div>
         <p>
           <span>Обратная связь:</span>
-          <span>mail@htmlacademy.ru</span>
+          <span><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
         </p>
         <p>
           <span>Разработано — </span>
