@@ -65,10 +65,10 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0 auto;
-
-  background-color: #ffffff;
 }
 
 a {
@@ -115,10 +115,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation-wrapper {
-  width: 940px;
-  margin: 0 auto;
   display: flex;
-
 }
 
 .main-header-logo {
@@ -235,8 +232,6 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation {
-  width: 940px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -337,12 +332,6 @@ input[type="radio"].visually-hidden {
 
 /*стилизация main*/
 
-.catalog,
-.goods,
-.manufacturers {
-  width: 940px;
-  margin: 0 auto;
-}
 
 .catalog {
   font-family: "Cuprum", Arial, sans-serif;
@@ -467,6 +456,10 @@ input[type="radio"].visually-hidden {
 
 .red-button:active {
   background-color: #ba2732;
+}
+
+.hummer-drill {
+  display: none;
 }
 
 .discounts {
@@ -648,10 +641,6 @@ input[type="radio"].visually-hidden {
   background-color: #f4f7f9;
 }
 
-.services-wrapper {
-  width: 940px;
-  margin: 0 auto;
-}
 
 .services-slide-wrapper {
   display: flex;
@@ -722,20 +711,22 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-guarantee {
+  display: none;
+
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
   background-position: top right;
 }
 
 .slide-credit {
+  display: none;
+
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   background-position: top right;
 }
 
 .about-company {
-  width: 940px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -804,8 +795,6 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
-  width: 940px;
-  margin: 0 auto;
   display: flex;
   padding-left: 0px;
 
@@ -834,8 +823,6 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-sections-wrapper {
-  width: 940px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -1007,10 +994,6 @@ input[type="radio"].visually-hidden {
   background-color: #f4f7f9;
 }
 
-.about-product-wrapper {
-  width: 940px;
-  margin: 0 auto;
-}
 
 /* Стилизация футера */
 
@@ -1020,10 +1003,6 @@ input[type="radio"].visually-hidden {
   background-color: #32425c;
 }
 
-.footer-wrapper {
-  width: 940px;
-  margin: 0 auto;
-}
 
 .footer-flex {
   display: flex;
@@ -1098,8 +1077,6 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright-wrapper {
-  width: 940px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }

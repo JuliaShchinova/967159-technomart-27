@@ -7,13 +7,12 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
 
     <!--Размтетка шапки-->
 
       <header class="main-header">
         <div class="main-navigation">
-          <div class="main-navigation-wrapper">
+          <div class="main-navigation-wrapper container">
             <a class="main-header-logo" href="index.html">
               <img src="img/logo-technomart.svg" alt="Техномарт" width="109" height="19">
             </a>
@@ -32,7 +31,7 @@
           </div>
         </div>
 
-        <div class="user-navigation">
+        <div class="user-navigation container">
           <p class="user-navigation-name">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
           <p class="user-navigation-contacts">
             <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -54,7 +53,7 @@
           </div>
         </div>
 
-        <nav class="site-navigation">
+        <nav class="site-navigation container">
           <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="about-company.html">Компания</a></li>
@@ -70,6 +69,7 @@
     <!--Разметка основной части-->
 
       <main>
+        <div class="container">
         <ul class="breadcrumbs">
           <li><a class="breadcrumbs-index" href="index.html"><span class="visually-hidden">Главная</span></a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -293,9 +293,10 @@
             </ul>
           </section>
         </div>
+      </div>
 
         <section class="about-product">
-          <div class="about-product-wrapper">
+          <div class="container">
           <h2 class="heading">Пара слов о перфораторах</h2>
           <p class ="description">Перфоратор — универсальный строительный инструмент.
             Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
@@ -310,7 +311,7 @@
     <!--Разметка футера-->
 
     <footer class="main-footer">
-      <div class="footer-wrapper">
+      <div class="container">
         <div class="footer-flex">
           <div class="footer-logo-wrapper">
             <a class="main-header-logo logo-footer" href="index.html">
@@ -337,7 +338,7 @@
       </div>
 
       <div class="footer-copyright">
-        <div class="copyright-wrapper">
+        <div class="copyright-wrapper container">
           <p class="footer-copyright-company">© 2010–2019 Компания «Техномарт»<br>
             Все права защищены</p>
           <div class="footer-social">
@@ -368,6 +369,5 @@
         <button type="button"><span class="visually-hidden">Закрыть</span></button>
       </div>
 
-    </div>
   </body>
 </html>
