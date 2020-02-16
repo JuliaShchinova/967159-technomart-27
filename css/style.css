@@ -51,6 +51,7 @@ html {
 }
 
 body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
 
@@ -80,23 +81,18 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
 
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
+
 
 /*Стилизация header*/
 
@@ -513,8 +509,7 @@ input[type="radio"].visually-hidden {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.catalog-item h3,
-.catalog-item a {
+.catalog-item h3 {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -606,7 +601,6 @@ input[type="radio"].visually-hidden {
 
 .manufacturers-item {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding-left: 0px;
 
@@ -616,8 +610,13 @@ input[type="radio"].visually-hidden {
 .manufacturers-item li {
   width: 220px;
   min-height: 145px;
+  margin-right: 20px;
 
   border: 1px solid #eaeaea;
+}
+
+.manufacturers-item li:nth-child(4n) {
+  margin-right: 0px;
 }
 
 .manufacturers-item li:hover,
@@ -940,12 +939,20 @@ input[type="radio"].visually-hidden {
 
 .catalog-items-wrapper {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding-left: 0px;
 
   list-style: none;
 }
+
+.catalog-items-wrapper li {
+  margin-right: 20px;
+}
+
+.catalog-items-wrapper li:nth-child(3n) {
+  margin-right: 0px;
+}
+
 
 .pagination-list {
   display: flex;
