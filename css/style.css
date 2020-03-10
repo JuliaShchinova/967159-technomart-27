@@ -467,8 +467,8 @@ img {
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 22px;
+  padding-right: 22px;
 
   list-style: none;
 }
@@ -486,18 +486,12 @@ img {
   color: #ffffff;
 }
 
-.site-navigation-main-link a {
-  padding-left: 52px;
-}
 
 .site-navigation-company-link a,
 .site-navigation-contacts-link a {
   padding-left: 33px;
 }
 
-.site-navigation-contacts-link a {
-  padding-right: 52px;
-}
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -951,12 +945,7 @@ img {
   border: 1px solid #eaeaea;
 }
 
-.catalog-item-image {
-  margin-top: 0px;
-  margin-bottom: 8px;
-}
-
-.catalog-item a {
+.catalog-item-wrapper {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -981,6 +970,8 @@ img {
 .catalog-item img {
   display: block;
   margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .catalog-item.flag::after {
@@ -1040,7 +1031,7 @@ img {
   padding-bottom: 40px;
   padding-left: 0px;
 
-  background-color: rgba(255,255,255,0.9);
+  background-color: #ffffff;
   z-index: 10;
 }
 
@@ -1135,14 +1126,10 @@ img {
   display: none;
 }
 
-.catalog-item:hover .item-buttons {
-  display: block;
-}
-
+.catalog-item:hover .item-buttons,
 .catalog-item:focus-within .item-buttons {
   display: block;
 }
-
 
 /* популярные производители */
 
@@ -1338,7 +1325,7 @@ img {
 
 .services-heading {
   margin-top: 36px;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
@@ -1416,7 +1403,7 @@ img {
 }
 
 .transport-wrapper {
-  width: 386px;
+  width: 400px;
   margin-bottom: 16px;
 }
 
@@ -1464,7 +1451,7 @@ img {
 
 .map {
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 }
 
 .contacts-wrapper .red-button {
