@@ -1126,7 +1126,10 @@ img {
   display: none;
 }
 
-.catalog-item:hover .item-buttons,
+.catalog-item:hover .item-buttons {
+  display: block;
+}
+
 .catalog-item:focus-within .item-buttons {
   display: block;
 }
@@ -1134,7 +1137,7 @@ img {
 /* популярные производители */
 
 .manufacturers {
-  padding-bottom: 65px;
+  padding-bottom: 66px;
 }
 
 .manufacturers-item {
@@ -1181,48 +1184,11 @@ img {
   margin: 0 auto;
 }
 
-.item-bosch {
-  padding-top: 53px;
-  padding-bottom: 54px;
+.manufacturers-item li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.item-makita {
-  padding-top: 50px;
-  padding-bottom: 54px;
-}
-
-.item-dewalt {
-  padding-top: 48px;
-  padding-bottom: 52px;
-}
-
-.item-interscol {
-  padding-top: 20px;
-  padding-bottom: 36px;
-}
-
-.item--hitachi {
-  padding-top: 57px;
-  padding-bottom: 56px;
-  padding-left: 3px;
-}
-
-.item-lg {
-  padding-top: 34px;
-  padding-bottom: 37px;
-}
-
-.item-aeg {
-  padding-top: 22px;
-  padding-bottom: 26px;
-}
-
-.item-metabo {
-  padding-top: 33px;
-  padding-bottom: 42px;
-  padding-left: 4px;
-}
-
 
 /* Сервисы */
 
@@ -1341,39 +1307,31 @@ img {
   margin-bottom: 0px;
 }
 
-.slide-delivery {
-  display: block;
-  background-image: url("../img/delivery.png");
+.slide {
+  display: none;
   background-repeat: no-repeat;
+}
+
+.slide p {
+  width: 380px;
+}
+
+.slide-delivery {
+  background-image: url("../img/delivery.png");
   background-position: 150px 25px;
 }
 
-.slide-delivery p {
-  width: 275px;
-}
-
 .slide-guarantee {
-  display: none;
-
   background-image: url("../img/guarantee.png");
-  background-repeat: no-repeat;
   background-position: top right;
 }
 
-.slide-guarantee p {
-  width: 379px;
-}
-
 .slide-credit {
-  display: none;
-
   background-image: url("../img/credit.png");
-  background-repeat: no-repeat;
   background-position: top right;
 }
 
 .slide-credit p {
-  width: 279px;
   margin-bottom: 30px;
 }
 
@@ -1383,6 +1341,10 @@ img {
   padding-bottom: 10px;
 
   background-color: #ff5357;
+}
+
+.active-slide {
+  display: block;
 }
 
 /* О компании */
@@ -2091,7 +2053,6 @@ img {
 }
 
 .dir {
-  /* margin-right: 17px; */
   margin-top: 7px;
 }
 
@@ -2099,20 +2060,16 @@ img {
   margin-right: 17px;
 }
 
-.up path,
-.down path {
+.up-down-dir path {
   fill: #c5c5c5
 }
 
-.up:hover path,
-.down:hover path,
-.up:hover path,
-.down:hover path {
+.up-down-dir:hover path,
+.up-down-dir:focus path {
   fill: #231F20;
 }
 
-.up:active path,
-.down:active path {
+.up-down-dir:active path {
   fill: #ee3643;
 }
 
@@ -2449,16 +2406,57 @@ img {
 
 /* Стилизация модальных окон */
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   position: fixed;
   left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
 }
 
 .modal-form {
   display: none;
   width: 620px;
+
+  margin-left: -310px;
+  top: 95px;
 
   background-color: #ffffff;
   border-top: 7px solid #ff5257;
@@ -2578,6 +2576,9 @@ img {
   width: 940px;
   height: 446px;
 
+  margin-left: -470px;
+  top: 95px;
+
   box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
 
   z-index: 30;
@@ -2586,6 +2587,9 @@ img {
 .modal-basket {
   display: none;
   width: 620px;
+
+  margin-left: -310px;
+  top: 150px;
 
   background-color: #ffffff;
   box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
@@ -2649,4 +2653,14 @@ img {
 .basket-continue:active {
   color: rgba(0, 0, 0, 0.3);
   outline: none;
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
