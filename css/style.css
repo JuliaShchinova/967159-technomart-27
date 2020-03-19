@@ -791,14 +791,21 @@ img {
   opacity: 0.3;
 }
 
-.slide-1 {
+.slide-btn-wrapper {
   position: absolute;
+  bottom: 33px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slide-btn {
+  position: relative;
   width: 10px;
   height: 10px;
   padding-left: 0px;
   padding-right: 0px;
-  bottom: 36px;
-  left: 295px;
+  margin-left: 3px;
+  margin-right: 3px;
 
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -807,24 +814,7 @@ img {
   border-radius: 50%;
 }
 
-.slide-2 {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  padding-left: 0px;
-  padding-right: 0px;
-  bottom: 36px;
-  right: 295px;
-
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  border: none ;
-
-  border-radius: 50%;
-}
-
-
-.indicator::before {
+.slide-btn.active::before {
   content: "";
   position: absolute;
 
@@ -838,10 +828,6 @@ img {
   background-repeat: no-repeat;
 
   border-radius: 50%;
-}
-
-.hummer-drill {
-  display: none;
 }
 
 .discounts {
@@ -1267,8 +1253,8 @@ img {
   outline: none;
 }
 
-.services-active,
-.services-active:hover,
+.services-button.active,
+.services-button.active:hover,
 .services-button:active {
   color: #32425c;
 
@@ -1344,6 +1330,14 @@ img {
 }
 
 .active-slide {
+  display: block;
+}
+
+.js-slide {
+  display: none;
+}
+
+.js-slide-active {
   display: block;
 }
 

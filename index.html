@@ -88,26 +88,26 @@
             <div class="slide-wrapper">
               <div class="slide-container">
                 <ul class="slide-tool">
-                  <li class="drill">
-                    <h3>Дрели</h3>
-                    <span>Соседям на радость!</span>
-                    <img src="img/slide-image1.jpg" alt="Дрели" width="620" height="266">
-                    <a class="red-button slide-red-button" href="catalog-drill.html">Открыть каталог</a>
-                  </li>
-                  <li class="hummer-drill">
+                  <li class="hummer-drill js-slide">
                     <h3>Перфораторы</h3>
                     <span>Настоящие мужские игрушки</span>
                     <img src="img/slide-image2.jpg" alt="Перфораторы" width="620" height="266">
                     <a class="red-button slide-red-button" href="catalog-hammer-drill.html">Открыть каталог</a>
+                  </li>
+                  <li class="drill js-slide js-slide-active">
+                    <h3>Дрели</h3>
+                    <span>Соседям на радость!</span>
+                    <img src="img/slide-image1.jpg" alt="Дрели" width="620" height="266">
+                    <a class="red-button slide-red-button" href="catalog-drill.html">Открыть каталог</a>
                   </li>
                 </ul>
                 <div>
                   <button class="forward" type="button"><span class="visually-hidden">Вперед</span></button>
                   <button class="back" type="button"><span class="visually-hidden">Назад</span></button>
                 </div>
-                <div>
-                  <button class="slide-1" type="button"><span class="visually-hidden">Слайд 1</span></button>
-                  <button class="slide-2 indicator" type="button"><span class="visually-hidden">Слайд 2</span></button>
+                <div class="slide-btn-wrapper">
+                  <button class="slide-btn js-slider-btn" type="button"><span class="visually-hidden">Слайд 1</span></button>
+                  <button class="slide-btn js-slider-btn active" type="button"><span class="visually-hidden">Слайд 2</span></button>
                 </div>
               </div>
 
@@ -129,7 +129,7 @@
             <h2>Популярные товары:</h2>
             <a class="red-button red-button-popular" href="popular.html">Все популярные товары</a>
           </div>
-          <ul class="catalog-list list-wrapper">
+          <ul class="catalog-list list-wrapper js-catalog">
             <li class="catalog-item">
               <div class="catalog-item-wrapper">
                 <a href="catalog-item.html">
@@ -254,25 +254,25 @@
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             <div class="services-slide-wrapper">
               <div class="services-buttons">
-                <button class="services-button services-active" type="button">Доставка</button>
+                <button class="services-button active" type="button">Доставка</button>
                 <button class="services-button" type="button">Гарантия</button>
                 <button class="services-button" type="button">Кредит</button>
               </div>
               <ul class="services-slider">
-                <li class="slide slide-delivery active-slide">
+                <li class="slide slide-delivery active-slide js-slide js-slide-active">
                   <h3 class="services-heading">Доставка</h3>
                   <p class="services-description">Мы с удовольствием доставим ваш товар прямо<br>
                     к вашему подъезду совершенно бесплатно!
                     Ведь&nbsp;мы&nbsp;неплохо&nbsp;заработаем,<br>
                     поднимая его на ваш этаж!</p>
                 </li>
-                <li class="slide slide-guarantee">
+                <li class="slide slide-guarantee js-slide">
                   <h3 class="services-heading">Гарантия</h3>
                   <p class ="services-description">Если купленный у нас товар поломается или заискрит,<br>
                     а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
                     Дом уж восстановите как-нибудь сами.</p>
                 </li>
-                <li class="slide slide-credit">
+                <li class="slide slide-credit js-slide">
                   <h3 class="services-heading">Кредит</h3>
                   <p class ="services-description">Залезть в долговую яму стало проще! <br>
                     Кредитные консультанты придут вам на помощь.</p>
@@ -404,6 +404,17 @@
       <div class="modal modal-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104034157!2d30.32125608441093!3d59.93879418736833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1580028129261!5m2!1sru!2sru" width="940" height="446" style="border:0;" allowfullscreen=""></iframe>
         <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
+
+      <div class="modal modal-basket">
+        <p>Товар добавлен в корзину!</p>
+        <div class="basket-buttons">
+          <a class="red-button js-modal-close" href="#">Оформить заказ</a>
+          <a class="basket-continue js-modal-close" href="#">Продолжить покупки</a>
+        </div>
+        <button class="modal-close js-modal-close" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
       </div>
