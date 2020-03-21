@@ -919,8 +919,15 @@ img {
 
 .list-wrapper {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.list-wrapper li {
+  margin-right: 20px;
+}
+
+.list-wrapper li:nth-child(4n) {
+  margin-right: 0px;
 }
 
 .catalog-item {
@@ -1180,12 +1187,13 @@ img {
 
 .services {
   background-color: #f4f7f9;
+  padding-top: 64px;
 }
 
 .heading {
   margin-top: 0px;
   margin-bottom: 25px;
-  padding-top: 64px;
+  padding-top: 0px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -1272,7 +1280,8 @@ img {
 }
 
 .services-slider li {
-  padding-bottom: 130px;
+  min-height: 286px;
+  padding-bottom: 30px;
 }
 
 .services-heading {
@@ -1346,7 +1355,7 @@ img {
 .about-company {
   display: flex;
   justify-content: space-between;
-  padding-top: 15px;
+  padding-top: 79px;
   padding-bottom: 85px;
 }
 
@@ -2155,12 +2164,9 @@ img {
 }
 
 .about-product {
+  padding-top: 65px;
   padding-bottom: 36px;
   background-color: #f4f7f9;
-}
-
-.about-product .heading {
-  padding-top: 65px;
 }
 
 
@@ -2175,7 +2181,7 @@ img {
 .footer-flex {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 49px;
+  padding-bottom: 48px;
 }
 
 .footer-logo-wrapper {
@@ -2280,7 +2286,7 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  padding-top: 35px;
+  padding-top: 34px;
 }
 
 .footer-copyright-company {
