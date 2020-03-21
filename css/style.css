@@ -680,6 +680,7 @@ img {
 
 .slide-tool li {
   width: 620px;
+  min-height: 266px;
   position: relative;
 
   background-color: #706d6d;
